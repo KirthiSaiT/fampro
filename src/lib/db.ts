@@ -1,6 +1,6 @@
 import { MongoClient, Db } from 'mongodb';
 
-const uri = 'mongodb+srv://kirthisai251_db_user:jdRPjM2JLBDV7QZT@cluster0.tdjpm36.mongodb.net/charades?appName=Cluster0';
+const uri = process.env.MONGODB_URI || 'mongodb+srv://kirthisai251_db_user:jdRPjM2JLBDV7QZT@cluster0.tdjpm36.mongodb.net/charades?appName=Cluster0';
 const options = {};
 
 let client: MongoClient;
